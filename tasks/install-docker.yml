@@ -1,0 +1,18 @@
+---
+# This ansible playbook installs docker on ubuntu build machine
+
+- name: Install docker-ce
+  apt:
+    name: "docker-ce={{ docker_version }}"
+    state: "present"
+    update_cache: yes
+  notify:
+    - restart docker
+
+- name: Run docker-ce as a service
+  service:
+    name: docker
+    state: started
+    enabled: yes
+
+

@@ -1,0 +1,9 @@
+---
+# Tasks file for Docker-CE installation
+
+- include_tasks: install-docker.yml
+
+# Tasks file for apche-maven installation
+
+- include_tasks: install-maven.yml
+
