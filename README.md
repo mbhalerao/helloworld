@@ -1,7 +1,6 @@
-# SImple Hello World Spring boot
+#How to execute ansible playbook
+#ansible-playbook yasks/main.yaml
 
-
-# Ansible role to install the latest stable release of Docker Community Edition on Ubuntu
 
 #CI Pipeline Steps
 #Part B(Jenkins Pipeline) from assignment falls under CI 
